@@ -29,11 +29,11 @@ function handleGeoSucces(position){
    getWeather(latitude, longitude);
 }
 function handleGeoError(){
-    console.log(`cant aceess`)
+    console.log(`cant aceess`);
 }
 
 function AskForCoords() {
-    navigator.geolocation.getCurrentPosition(handleGeoSucces, handleGeoError)
+    navigator.geolocation.getCurrentPosition(handleGeoSucces, handleGeoError);
 }
 
 function loadCoords(){
